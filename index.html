@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <title> Codetribe </title>
+
+  <head>
+	<link rel="stylesheet" href="./style.css"/>
+  </head>
+
   <body>
 	<!-- This is the @head and will encompass our logo and our navigation bar -->
-	<head style="background-color: green">
-	  <table style="width: 100%;">
+	<head class="mainHead">
+	  <table class="headTable">
 	  <tr>
 	    <td>
 	      <img src="assets/logo/logo1.jpeg" width="100px" alt="" />
@@ -12,8 +17,8 @@
 	    <td align="right">
 		<nav style="margin-right: 50px; margin-top: 16px; margin-bottom: 16px; margin-left: 50px;">
 			<a href="#">Home</a>
-			<a href="About.html" style="margin: 16px;">About Us</a>
-			<a href="Contact_Us.html">Contact Us</a>
+			<a href="About.html" style="margin: 16px;">About</a>
+			<a href="Contact_Us.html">Contact</a>
 		</nav>
 	    </td>
 	  </tr>
@@ -21,36 +26,42 @@
 	</head>
 
 	<!-- This is our main and will encompass all our content for the landing page for our website.-->
-	<main style="height: 100vh; background-color: aqua;">
-	  <table style="width: 100%; height: 300px;">
+	<main class="mainContent">
+		<p><b>Home</b></p>
+	  <table class="mainTable">
 	    <tr>
 		<td colspan="2">
-		  <img
-		    src="assets/Pictures/Photo2.jpeg"
+		<!-- <img
+		    src="assets/Images/Photo2.jpeg"
 		    width="100%"
-		    height="400px"
+		    height="350px"
 		    alt=""
 		    style="object-fit: cover;"
-		  />
+		  /> -->
+
+		 <video width="100%" height="350px" autoplay> 
+			<source src="./assets/videos/AI_video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+
 		</td>
 	    </tr>
 	    <tr>
 	    	<td style="padding-left: 20vh; padding-top: 10px;">
 		  <h1>Sandile Mabilisa</h1>
-		  <p style="width: 500px;">
+		  <p>
 		    I am a South African citizen, aged 30. I grew up in Mpumalanga (Ermelo), and currently living in Pretoria. 
 			I studied IT (Software Development) at the Tshwane University of Technology, from year 2019 
 			and completed in 2022.
 		  </p>
-		  <p> </p>
-		  <p style="width: 500px;";>
+		  <p>
 			I worked as a student assistant on campus. I have experience of working into teams. 
 			I am passionate in Web & Software Development, eager to learn, and determined to deliver the results. 
 		  </p>
 		</td>
 		<td align="right" style="padding-right: 20vh; padding-top: 10px;">
 		  <img
-		    src="assets/Pictures/Photo1.jpg"
+		    src="assets/Images/Photo1.jpg"
 		    width="200px"
 		    height="200px"
 		    alt=""
@@ -65,11 +76,40 @@
 	<footer>
 	  <table style="width: 100%; height: 100px; background-color: blue">
 	    <tr>
-		<td style="padding-left:20vh;">address here</td>
+		<td style="padding-left:20vh;">Gauteng, Pretoria</td>
 		<td colspan="2">a map here</td>
 	    </tr>
 	    <tr>
-		<td style="padding-left:20vh;">social media links here</td>
+			<!--social media links here-->
+		<td style="padding-left:20vh;">
+			<!--Facebook link-->
+			<a href="https://facebook.com/sandile22">
+				<img src="assets/icons/facebook_icon.png" 
+					alt="" 
+					class="socialMediaLinks"; />
+				</a>
+
+			<!--Linkedin link-->
+			<a href="https://www.linkedin.com/in/sandile-mabilisa-3ab591230">
+				<img src="assets/icons/linkedin_icon.png" 
+					alt="" 
+					class="socialMediaLinks"; />
+				</a>
+
+			<!--Whatsapp link-->
+			<a href="https://www.whatsapp.com/Masandy-0734908931">
+				<img src="assets/icons/whatsap_icon.png" 
+					alt="" 
+					class="socialMediaLinks"; />
+				</a>
+
+			<!--Email link-->
+			<a href="https://www.gmail.com/mabilisasandile">
+				<img src="assets/icons/email_icon.png" 
+					alt="" 
+					class="socialMediaLinks"; />
+				</a>
+		</td>
 	    </tr>
 	  </table>
 	</footer>
